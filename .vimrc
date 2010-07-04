@@ -33,3 +33,6 @@ filetype indent on
 noremap ' `
 noremap ` '
 
+" key mapping
+map <C-[> <esc>
+
