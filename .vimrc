@@ -34,5 +34,4 @@ noremap ' `
 noremap ` '
 
 " key mapping
-map <C-[> <esc>
 
