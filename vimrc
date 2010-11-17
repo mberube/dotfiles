@@ -1,6 +1,7 @@
 set nocompatible
 set tabstop=3
 set shiftwidth=3
+set softtabstop=3
 set ai
 set nu
 set ruler
@@ -32,6 +33,9 @@ filetype indent on
 
 noremap ' `
 noremap ` '
+
+" This is useful for debugging
+" set verbose=9
 
 " key mapping
 
