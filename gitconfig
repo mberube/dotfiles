@@ -1,0 +1,14 @@
+[user]
+	name = Mathieu Berube
+	email = mberube@pyxis-tech.com
+
+[color]
+	ui = auto
+
+[core]
+	editor = vi
+
+[alias]
+	co = checkout
+	ci = commit
+	st = status
