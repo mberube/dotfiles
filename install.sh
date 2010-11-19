@@ -12,3 +12,4 @@ cd
 relink .vimrc $DOTFILES/vimrc
 relink .vim $DOTFILES/vim
 relink .gitconfig $DOTFILES/gitconfig
+relink .screenrc $DOTFILES/screenrc

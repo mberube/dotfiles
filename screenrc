@@ -1,0 +1,9 @@
+escape ^O^O
+
+bindkey -d -k F1 escape ^O^O # bind Ctrl-O to F11
+bindkey -d -k F2 escape \140\140 # bind ` to F12
+
+# bindings start at 1 for easier reach
+bind c screen 1
+bind 0 select 10
+screen 1
