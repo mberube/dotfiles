@@ -3,6 +3,19 @@ escape \140\140
 bindkey -d -k F1 escape ^O^O # bind Ctrl-O to F11 (for some copy/paste)
 bindkey -d -k F2 escape \140\140 # bind ` (backquote) to F12
 
+shelltitle ''
+
+caption always "%{= KW}%-Lw%{= wb}%n %t %{= KW}%+Lw %-=| ${USER}@%H | %M%d %c%{-}"
+# Some decryption hints:
+# # %{= KW}     background light black (aka dark gray) with foreground light white
+# # %{= wb}     background dark white (ake light gray) with foreground dark blue
+# # %-Lw        all windows before the current window.
+# # %n%f %t     current window number, flags and title.
+# # %+Lw        all windows after the current window.
+# # %-=         pad remaining spaces.
+# # %H          hostname.
+# # %M%d %s     month and day (MmmDD) and current time (HH:MM).
+
 # bindings start at 1 for easier keyboard reach
 bind c screen 1
 bind 0 select 10
