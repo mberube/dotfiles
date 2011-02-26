@@ -65,6 +65,7 @@ function cond_source () {
 
 source $HOME/.bash/shell.sh
 source $HOME/.bash/alias.sh
+source $HOME/.bash/cdargs-bash.sh
 cond_source $HOME/.bash/local/variables.sh
 
 # shell is interactive?
