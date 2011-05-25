@@ -1,3 +1,4 @@
 vim/.netrwhist
 bash/local/*
 *.swp
+.DS_Store
