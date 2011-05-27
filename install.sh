@@ -15,3 +15,4 @@ relink .gitconfig $DOTFILES/gitconfig
 relink .screenrc $DOTFILES/screenrc
 relink .bash $DOTFILES/bash
 relink .bashrc $DOTFILES/bashrc
+relink .bash_profile $DOTFILES/bash_profile
