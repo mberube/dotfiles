@@ -7,6 +7,7 @@ alias gs='git status'
 alias gc='git commit'
 alias gca='git commit -a'
 alias ga='git add'
+alias gd='git diff'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
