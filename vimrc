@@ -1,3 +1,4 @@
+call pathogen#infect()
 set nocompatible
 set tabstop=3
 set shiftwidth=3
@@ -38,4 +39,5 @@ noremap ` '
 " set verbose=9
 
 " key mapping
+map <F2> :NERDTreeToggle<CR>
 

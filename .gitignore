@@ -1,4 +1,6 @@
 vim/.netrwhist
+*.bak
 bash/local/*
 *.swp
 .DS_Store
+
