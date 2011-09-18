@@ -1,8 +1,9 @@
-call pathogen#infect()
+call pathogen#infect() " pathogen to have clean plugins
+
 set nocompatible
-set tabstop=3
-set shiftwidth=3
-set softtabstop=3
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set ai
 set nu
 set ruler
@@ -11,6 +12,7 @@ set history=100
 set wildmenu
 set wildmode=list:longest
 set showmatch "show matching braces
+set mouse=a " enabled to use the mouse in xterm
 
 " ignore caps for search unless there is one
 set ignorecase
@@ -41,3 +43,15 @@ noremap ` '
 " key mapping
 map <F2> :NERDTreeToggle<CR>
 
+" hide toolbar in gui mode
+if has("gui_running")
+	set go-=T
+end
+
+set wildmenu
+set wildmode=list:longest,full
+
+" completion with ctrl-space (gui only, problem with console?)
+if has("gui_running")
+	inoremap <C-space> <C-X><C-O>
+end
