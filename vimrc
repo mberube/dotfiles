@@ -54,4 +54,9 @@ set wildmode=list:longest,full
 " completion with ctrl-space (gui only, problem with console?)
 if has("gui_running")
 	inoremap <C-space> <C-X><C-O>
+else 
+	if has("unix")
+		" C-space is \0 in linux
+		inoremap <Nul> <C-X><C-O>
+	endif
 end
