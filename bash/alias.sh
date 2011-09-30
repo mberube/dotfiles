@@ -8,6 +8,8 @@ alias gc='git commit'
 alias gca='git commit -a'
 alias ga='git add'
 alias gd='git diff'
+alias gl='git log'
+alias gb='git branch'
 alias gamend='git commit --amend'
 
 # enable color support of ls and also add handy aliases
