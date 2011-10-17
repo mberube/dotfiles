@@ -49,13 +49,6 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-
-" map window switch
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-
 " hide toolbar in gui mode
 if has("gui_running")
 	set go-=T
