@@ -1,9 +1,9 @@
 call pathogen#infect() " pathogen to have clean plugins
 
 set nocompatible
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set ai
 set nu
 set ruler
@@ -42,6 +42,12 @@ noremap ` '
 
 " key mapping
 map <F2> :NERDTreeToggle<CR>
+
+" map window switch
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 " hide toolbar in gui mode
 if has("gui_running")
