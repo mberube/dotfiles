@@ -39,4 +39,6 @@ function prompt_char {
 }
 
 #export PS1='$(hg_ps1)\n\u at \h in \w\n$ '
-export PS1='\[${COLOR_BLUE}\]\u@\h: \[${COLOR_GREEN}\]\w \[${COLOR_GRAY}\]$(hg_prompt_info)$(git_prompt_info)\[${COLOR_NC}\]$(prompt_char) '
+# hg + git prompt
+#export PS1='\[${COLOR_BLUE}\]\u@\h: \[${COLOR_GREEN}\]\w \[${COLOR_GRAY}\]$(hg_prompt_info)$(git_prompt_info)\[${COLOR_NC}\]$(prompt_char) '
+export PS1='\[${COLOR_BLUE}\]\u@\h: \[${COLOR_GREEN}\]\w \[${COLOR_GRAY}\]$(git_prompt_info)\[${COLOR_NC}\]$(prompt_char) '
