@@ -43,6 +43,13 @@ noremap ` '
 " key mapping
 map <F2> :NERDTreeToggle<CR>
 
+" easier window switching
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+
 " map window switch
 map <C-h> <C-w>h
 map <C-j> <C-w>j
