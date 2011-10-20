@@ -13,6 +13,7 @@ set wildmenu
 set wildmode=list:longest
 set showmatch "show matching braces
 set mouse=a " enabled to use the mouse in xterm
+set expandtab
 
 " ignore caps for search unless there is one
 set ignorecase
@@ -34,8 +35,12 @@ filetype on
 filetype plugin on
 filetype indent on
 
+" change leader
+let mapleader=','
+
 noremap ' `
 noremap ` '
+noremap ; :
 
 " This is useful for debugging
 " set verbose=9
@@ -48,6 +53,11 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+" indent with one key
+nmap > >>
+nmap < <<
+
 
 " hide toolbar in gui mode
 if has("gui_running")
