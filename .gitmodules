@@ -37,3 +37,6 @@
 [submodule "vim/bundle/BufClose"]
 	path = vim/bundle/BufClose
 	url = https://github.com/vim-scripts/BufClose.vim.git
+[submodule "vim/bundle/syntastic"]
+	path = vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git

@@ -67,6 +67,13 @@ end
 set wildmenu
 set wildmode=list:longest,full
 
+" syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_auto_loc_list=1
+
+
 " completion with ctrl-space (gui only, problem with console?)
 if has("gui_running")
 	inoremap <C-space> <C-X><C-O>
