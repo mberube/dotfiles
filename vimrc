@@ -4,8 +4,11 @@ set nocompatible
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set ai
-set nu
+set smarttab
+set autoindent
+set smartindent
+
+set number
 set ruler
 set hidden
 set history=100
@@ -54,6 +57,8 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+map <leader>tn :tabnew<cr>
+
 " indent with one key
 nmap > >>
 nmap < <<
@@ -83,3 +88,20 @@ else
 		inoremap <Nul> <C-X><C-O>
 	endif
 end
+
+" set persistent undo
+try
+    if IsWindows()
+      set undodir=C:\Windows\Temp
+    else
+      set undodir=~/.vim_runtime/undodir
+    endif
+
+    set undofile
+catch
+endtry
+
+
+function! IsWindows()
+  return (has("win32") || has("win64") || has("win95"))
+endfunction
