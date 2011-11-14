@@ -58,6 +58,7 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 map <leader>tn :tabnew<cr>
+map <leader>f :MRU<cr>
 
 " indent with one key
 nmap > >>
