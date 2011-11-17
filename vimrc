@@ -14,9 +14,10 @@ set hidden
 set history=100
 set wildmenu
 set wildmode=list:longest
-set showmatch "show matching braces
+set showmatch " show matching braces
 set mouse=a " enabled to use the mouse in xterm
 set expandtab
+set gdefault " adds the /g flag on substitutions (:s)
 
 " ignore caps for search unless there is one
 set ignorecase
