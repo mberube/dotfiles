@@ -46,3 +46,9 @@
 [submodule "vim/bundle/mru"]
 	path = vim/bundle/mru
 	url = https://github.com/vim-scripts/mru.vim.git
+[submodule "vim/bundle/rubycomplete.vim"]
+	path = vim/bundle/rubycomplete.vim
+	url = https://github.com/vim-scripts/rubycomplete.vim.git
+[submodule "vim/bundle/supertab"]
+	path = vim/bundle/supertab
+	url = https://github.com/ervandew/supertab.git
