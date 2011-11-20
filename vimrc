@@ -14,24 +14,22 @@ set hidden
 set history=100
 set wildmenu
 set wildmode=list:longest
-set showmatch " show matching braces
 set mouse=a " enabled to use the mouse in xterm
 set expandtab
-set gdefault " adds the /g flag on substitutions (:s)
 
-" ignore caps for search unless there is one
-set ignorecase
+
+set ignorecase " ignore caps for search unless there is one
 set smartcase
-
-" highlight search term
-set hlsearch
-set incsearch
+set hlsearch " highlight search term
+set incsearch " incremental search
+set showmatch " show matching braces
+set gdefault " adds the /g flag on substitutions (:s)
 
 set title
 set backspace=indent,eol,start
 
 set visualbell
-set autoread
+set autoread " automatically reload files if they changed
 
 " syntax highlighting
 syntax on
