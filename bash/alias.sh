@@ -12,6 +12,9 @@ alias gl='git log'
 alias gb='git branch'
 alias gamend='git commit --amend'
 
+# bundle exec aliases
+alias be='bundle exec'
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
 	test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
