@@ -57,7 +57,13 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 map <leader>tn :tabnew<cr>
-map <leader>f :MRU<cr>
+map <leader>m :MRU<cr>
+
+" double percent sign in command mode is expanded
+" to directory of current file
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
 
 " indent with one key
 nmap > >>
