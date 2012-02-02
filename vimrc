@@ -95,6 +95,10 @@ else
 	endif
 end
 
+set nobackup
+set nowritebackup
+set noswapfile
+
 " set persistent undo
 try
     if IsWindows()
