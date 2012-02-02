@@ -13,8 +13,10 @@ alias gb='git branch'
 alias gpr='git pull --rebase'
 alias gamend='git commit --amend'
 
-# bundle exec aliases
+# rails aliases
+alias r='rails'
 alias be='bundle exec'
+alias ber='bundle exec rake'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
