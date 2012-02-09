@@ -1,4 +1,5 @@
 call pathogen#infect() " pathogen to have clean plugins
+call pathogen#helptags()
 
 set nocompatible
 set tabstop=2
@@ -50,6 +51,9 @@ noremap ; :
 " key mapping
 map <F2> :NERDTreeToggle<CR>
 
+" code formatting on F5
+map  <silent> <F5> mmgg=G'm^
+
 " easier window switching
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -72,7 +76,7 @@ nmap < <<
 
 " hide toolbar in gui mode
 if has("gui_running")
-	set go-=T
+  set go-=T
 end
 
 set wildmenu
@@ -87,12 +91,12 @@ let g:syntastic_auto_loc_list=1
 
 " completion with ctrl-space (gui only, problem with console?)
 if has("gui_running")
-	inoremap <C-space> <C-X><C-O>
+  inoremap <C-space> <C-X><C-O>
 else 
-	if has("unix")
-		" C-space is \0 in linux
-		inoremap <Nul> <C-X><C-O>
-	endif
+  if has("unix")
+    " C-space is \0 in linux
+    inoremap <Nul> <C-X><C-O>
+  endif
 end
 
 set nobackup
@@ -101,13 +105,13 @@ set noswapfile
 
 " set persistent undo
 try
-    if IsWindows()
-      set undodir=C:\Windows\Temp
-    else
-      set undodir=~/.vim_runtime/undodir
-    endif
+  if IsWindows()
+    set undodir=C:\Windows\Temp
+  else
+    set undodir=~/.vim_runtime/undodir
+  endif
 
-    set undofile
+  set undofile
 catch
 endtry
 
