@@ -58,3 +58,12 @@
 [submodule "vim/bundle/ack.vim"]
 	path = vim/bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/bundle/Pydiction.git"]
+	path = vim/bundle/Pydiction.git
+	url = https://github.com/vim-scripts/Pydiction.git
+[submodule "vim/bundle/python.vim"]
+	path = vim/bundle/python.vim
+	url = https://github.com/vim-scripts/python.vim.git
+[submodule "vim/bundle/pydoc.vim"]
+	path = vim/bundle/pydoc.vim
+	url = https://github.com/vim-scripts/pydoc.vim.git
