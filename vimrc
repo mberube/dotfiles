@@ -87,6 +87,7 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_auto_loc_list=1
+let g:pydiction_location='~/.vim/bundle/Pydiction.git/complete-dict'
 
 
 " completion with ctrl-space (gui only, problem with console?)
