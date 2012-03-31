@@ -1,2 +1,4 @@
 My shell environment.
 Only tested on ubuntu so far, hopefully most of the bash-fu will work on OSX
+
+On osx, set defaults by running osx.sh
