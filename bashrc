@@ -73,3 +73,8 @@ if [[ $- =~ i ]]; then
 	source      $HOME/.bash/prompt.sh
 	cond_source $HOME/.bash/local/prompt.sh
 fi
+
+# if I have a ~/bin directory, put it in the path
+if [ -d $HOME/bin ]; then
+  export PATH=~/bin:$PATH
+fi
