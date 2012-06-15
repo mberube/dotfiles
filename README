@@ -1,4 +1,10 @@
 My shell environment.
-Only tested on ubuntu so far, hopefully most of the bash-fu will work on OSX
+I use it on both ubuntu and osx. 
 
-On osx, set defaults by running osx.sh
+On osx, set sane defaults by running osx.sh
+
+Information and remarks
+- If you have settings you want for only one machine (or simply not committed), files under bash/local will be read automatically
+- If a ~/bin directory is found, it is added to the PATH
+- some vim plugins require +ruby, which is not installed by default in osx (at least in 10.6). Either recompile or create an executable file 'vi' in ~/bin that will run 'mvim -v' (if you use macvim). 
+

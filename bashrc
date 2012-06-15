@@ -66,13 +66,15 @@ function cond_source () {
 source $HOME/.bash/shell.sh
 source $HOME/.bash/alias.sh
 source $HOME/.bash/cdargs-bash.sh
-cond_source $HOME/.bash/local/variables.sh
 
 # shell is interactive?
 if [[ $- =~ i ]]; then
 	source      $HOME/.bash/prompt.sh
-	cond_source $HOME/.bash/local/prompt.sh
 fi
+
+for f in `ls $HOME/.bash/local`; do
+  cond_source $f
+done
 
 # if I have a ~/bin directory, put it in the path
 if [ -d $HOME/bin ]; then
