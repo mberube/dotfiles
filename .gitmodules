@@ -67,3 +67,6 @@
 [submodule "vim/bundle/pydoc.vim"]
 	path = vim/bundle/pydoc.vim
 	url = https://github.com/vim-scripts/pydoc.vim.git
+[submodule "vim/bundle/treetop.vim"]
+	path = vim/bundle/treetop.vim
+	url = https://github.com/nanki/treetop.vim.git
