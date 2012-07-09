@@ -1,5 +1,6 @@
 # Setup some colors to use later in interactive shell or scripts
 export EDITOR=vi
+export PYTHONSTARTUP=~/.pythonrc
 
 export COLOR_NC=$'\e[0m' # No Color
 export COLOR_WHITE=$'\e[1;37m'

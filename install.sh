@@ -19,3 +19,4 @@ relink .bash_profile $DOTFILES/bash_profile
 relink .octaverc $DOTFILES/octaverc
 relink .ackrc $DOTFILES/ackrc
 relink .pryrc $DOTFILES/pryrc
+relink .pythonrc $DOTFILES/pythonrc
