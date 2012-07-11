@@ -73,6 +73,7 @@ map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
 nmap > >>
 nmap < <<
 
+autocmd BufWritePre * :%s/\s\+$//e
 
 " hide toolbar in gui mode
 if has("gui_running")
