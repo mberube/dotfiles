@@ -73,7 +73,15 @@ map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
 nmap > >>
 nmap < <<
 
-autocmd BufWritePre * :%s/\s\+$//e
+" remove trailing whitespaces for certain file types
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+
+autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 " hide toolbar in gui mode
 if has("gui_running")
@@ -94,7 +102,7 @@ let g:pydiction_location='~/.vim/bundle/Pydiction.git/complete-dict'
 " completion with ctrl-space (gui only, problem with console?)
 if has("gui_running")
   inoremap <C-space> <C-X><C-O>
-else 
+else
   if has("unix")
     " C-space is \0 in linux
     inoremap <Nul> <C-X><C-O>
