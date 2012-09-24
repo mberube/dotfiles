@@ -73,7 +73,7 @@ if [[ $- =~ i ]]; then
 fi
 
 for f in `ls $HOME/.bash/local`; do
-  cond_source $f
+  cond_source $HOME/.bash/local/$f
 done
 
 # if I have a ~/bin directory, put it in the path
