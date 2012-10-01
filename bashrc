@@ -80,3 +80,5 @@ done
 if [ -d $HOME/bin ]; then
   export PATH=~/bin:$PATH
 fi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
