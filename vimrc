@@ -81,7 +81,15 @@ fun! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 
-autocmd FileType c,cpp,java,php,ruby,python,haml autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+if has('autocmd')
+  " Source .vimrc when I write it.  The nested keyword allows
+  " autocommand ColorScheme to fire when sourcing ~/.vimrc.
+  au! BufWritePost vimrc nested source %
+  au! BufWritePost .vimrc nested source %
+
+  " Strip whitespaces at end of line for the following file types
+  autocmd FileType c,cpp,java,php,ruby,python,haml,coffee autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+endif
 
 " hide toolbar in gui mode
 if has("gui_running")
