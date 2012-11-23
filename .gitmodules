@@ -67,3 +67,6 @@
 [submodule "vim/bundle/treetop.vim"]
 	path = vim/bundle/treetop.vim
 	url = https://github.com/nanki/treetop.vim.git
+[submodule "vim/bundle/matchit"]
+	path = vim/bundle/matchit
+	url = https://github.com/vim-scripts/matchit.zip.git
