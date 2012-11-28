@@ -50,6 +50,7 @@ noremap ; :
 
 " key mapping
 map <F2> :NERDTreeToggle<CR>
+imap jj <ESC>
 
 " code formatting on F5
 map  <silent> <F5> mmgg=G'm^
