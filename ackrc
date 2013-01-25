@@ -1,6 +1,7 @@
 --ignore-dir=tmp
 
 --type-add=ruby=.haml
+--type-add=ruby=.slim
 --type-add=js=.coffee
 --type-add=css=.scss
 --type-add=css=.less
