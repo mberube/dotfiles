@@ -89,7 +89,7 @@ if has('autocmd')
   au! BufWritePost .vimrc nested source %
 
   " Strip whitespaces at end of line for the following file types
-  autocmd FileType c,cpp,java,php,ruby,python,haml,coffee autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+  autocmd FileType c,cpp,java,php,ruby,python,haml,coffee,js autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 endif
 
 " hide toolbar in gui mode
