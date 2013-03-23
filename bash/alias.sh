@@ -10,6 +10,7 @@ alias ga='git add'
 alias gd='git diff'
 alias gl='git log'
 alias gb='git branch'
+alias gf='git fetch'
 alias gpr='git pull --rebase'
 alias gamend='git commit --amend'
 
