@@ -4,5 +4,6 @@
 --type-add=ruby=.slim
 --type-add=js=.coffee
 --type-add=css=.scss
+--type-add=css=.sass
 --type-add=css=.less
 --type-set=cucumber=.feature
