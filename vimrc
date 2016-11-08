@@ -9,6 +9,8 @@ set smarttab
 set autoindent
 set smartindent
 
+set clipboard=unnamed
+
 set number
 set ruler
 set hidden
