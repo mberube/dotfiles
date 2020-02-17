@@ -70,3 +70,18 @@
 [submodule "vim/bundle/matchit"]
 	path = vim/bundle/matchit
 	url = https://github.com/vim-scripts/matchit.zip.git
+[submodule "vim/bundle/vim-javascript"]
+	path = vim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript
+[submodule "vim/bundle/vim-jsx-pretty"]
+	path = vim/bundle/vim-jsx-pretty
+	url = https://github.com/MaxMEllon/vim-jsx-pretty
+[submodule "vim/bundle/vim-jsx"]
+	path = vim/bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx
+[submodule "vim/bundle/yajs.vim"]
+	path = vim/bundle/yajs.vim
+	url = https://github.com/othree/yajs.vim
+[submodule "vim/bundle/oceanic-next"]
+	path = vim/bundle/oceanic-next
+	url = https://github.com/mhartington/oceanic-next

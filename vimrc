@@ -140,3 +140,18 @@ endtry
 function! IsWindows()
   return (has("win32") || has("win64") || has("win95"))
 endfunction
+
+set rubydll=~/.rvm/rubies/ruby-2.4.6/lib/libruby.2.4.dylib
+"set luadll=/usr/local/Cellar/lua52/5.2.1/lib/liblua.dylib
+
+" Theme
+ syntax enable
+" for vim 7
+ set t_Co=256
+
+" for vim 8
+ if (has("termguicolors"))
+  set termguicolors
+ endif
+
+colorscheme OceanicNext
