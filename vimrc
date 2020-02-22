@@ -100,9 +100,18 @@ map <leader>m :MRU<cr>
 " double percent sign in command mode is expanded
 " to directory of current file
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
-"map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
-"map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
-map <leader>f :CtrlP pwd<cr>
+
+let g:ctrlp_working_path_mode = 'cra'
+let g:ctrlp_max_height = 100
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+" if executable('ack')
+"   let g:ctrlp_user_command = 'ack %s -l ""'
+" endif
+" if executable('ag')
+"   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+" endif
+"map <leader>f :CtrlP pwd<cr>
+map <leader>f :CtrlP<cr>
 map <leader>F :CtrlPCurFile<cr>
 
 " indent with one key
