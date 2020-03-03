@@ -76,9 +76,6 @@
 [submodule "vim/bundle/vim-jsx-pretty"]
 	path = vim/bundle/vim-jsx-pretty
 	url = https://github.com/MaxMEllon/vim-jsx-pretty
-[submodule "vim/bundle/vim-jsx"]
-	path = vim/bundle/vim-jsx
-	url = https://github.com/mxw/vim-jsx
 [submodule "vim/bundle/yajs.vim"]
 	path = vim/bundle/yajs.vim
 	url = https://github.com/othree/yajs.vim
