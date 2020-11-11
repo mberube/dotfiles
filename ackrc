@@ -1,4 +1,5 @@
 --ignore-dir=tmp
+--ignore-dir=venv
 
 --type-add=ruby=.haml
 --type-add=ruby=.slim
@@ -7,3 +8,4 @@
 --type-add=css=.sass
 --type-add=css=.less
 --type-set=cucumber=.feature
+--type-add=doc=.raml

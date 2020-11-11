@@ -81,4 +81,26 @@ if [ -d $HOME/bin ]; then
   export PATH=~/bin:$PATH
 fi
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$(pyenv root)/shims:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+fuck() {
+ USERNAME=mberube
+ CURRENT=$(git remote -v | head -n 1 | awk '{print $2}')
+ if [[ $CURRENT == ssh* ]]; then
+  UPDATED=$(echo $CURRENT | sed "s_ssh://git_https://${USERNAME}_" | sed 's_:7999_/scm_')
+  git remote set-url origin $UPDATED
+  echo $UPDATED
+ elif [[ $CURRENT == https* ]]; then
+  UPDATED=$(echo $CURRENT | sed "s_https://${USERNAME}_ssh://git_" | sed 's_/scm_:7999_')
+  git remote set-url origin $UPDATED
+  echo $UPDATED
+ else
+  echo "Doesn't seem to be a git repo?"
+ fi
+}
+
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools

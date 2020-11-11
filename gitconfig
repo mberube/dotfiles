@@ -6,7 +6,8 @@
   ui = auto
 
 [core]
-	editor = /usr/bin/vim
+	editor = /usr/local/bin/vim
+	excludesfile = /Users/mberube/.gitignore_global
 
 [alias]
   co = checkout

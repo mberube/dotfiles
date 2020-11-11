@@ -1,6 +1,3 @@
-call pathogen#infect() " pathogen to have clean plugins
-call pathogen#helptags()
-
 set nocompatible
 set tabstop=2
 set shiftwidth=2
@@ -33,6 +30,40 @@ set backspace=indent,eol,start
 
 set visualbell
 set autoread " automatically reload files if they changed
+
+
+call plug#begin('~/.vim/plugged')
+Plug 'mhartington/oceanic-next'
+Plug 'vim-ruby/vim-ruby'
+Plug 'msanders/snipmate.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-ragtag'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-repeat'
+Plug 'vim-scripts/taglist.vim'
+Plug 'tpope/vim-haml'
+Plug 'vim-scripts/BufClose.vim'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-commentary'
+Plug 'vim-scripts/mru.vim'
+Plug 'vim-scripts/rubycomplete.vim'
+Plug 'ervandew/supertab'
+Plug 'vim-scripts/vim-coffee-script'
+Plug 'mileszs/ack.vim'
+Plug 'vim-scripts/Pydiction'
+Plug 'vim-scripts/python.vim'
+Plug 'vim-scripts/pydoc.vim'
+Plug 'nanki/treetop.vim'
+Plug 'vim-scripts/matchit.zip'
+Plug 'pangloss/vim-javascript'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'othree/yajs.vim'
+Plug 'mhartington/oceanic-next'
+"Plug 'wincent/Command-T'
+Plug 'kien/ctrlp.vim'
+call plug#end()
+
 
 " syntax highlighting
 syntax on
@@ -69,8 +100,10 @@ map <leader>m :MRU<cr>
 " double percent sign in command mode is expanded
 " to directory of current file
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
-map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
-map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
+"map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+"map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
+map <leader>f :CtrlP pwd<cr>
+map <leader>F :CtrlPCurFile<cr>
 
 " indent with one key
 nmap > >>
@@ -141,7 +174,7 @@ function! IsWindows()
   return (has("win32") || has("win64") || has("win95"))
 endfunction
 
-set rubydll=~/.rvm/rubies/ruby-2.4.6/lib/libruby.2.4.dylib
+"set rubydll=~/.rvm/rubies/ruby-2.7.1/lib/libruby.2.7.dylib
 "set luadll=/usr/local/Cellar/lua52/5.2.1/lib/liblua.dylib
 
 " Theme
