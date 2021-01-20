@@ -15,6 +15,7 @@ relink .gitconfig $DOTFILES/gitconfig
 relink .screenrc $DOTFILES/screenrc
 relink .bash $DOTFILES/bash
 relink .bashrc $DOTFILES/bashrc
+relink .zshrc $DOTFILES/zshrc
 relink .bash_profile $DOTFILES/bash_profile
 relink .octaverc $DOTFILES/octaverc
 relink .ackrc $DOTFILES/ackrc
