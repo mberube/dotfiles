@@ -31,3 +31,6 @@ if [ -x /usr/bin/dircolors ]; then
 	alias egrep='egrep --color=auto'
 fi
 
+function bundle_find {
+  grep "$@" -r $(bundle show --paths)
+}
