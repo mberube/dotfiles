@@ -13,6 +13,7 @@ alias gb='git branch'
 alias gf='git fetch'
 alias gpr='git pull --rebase'
 alias gamend='git commit --amend'
+alias killspring="ps aux | grep 'rspec\|spring' | grep -v grep | awk '{print \$2}' | xargs kill -9"
 
 # rails aliases
 alias r='rails'
