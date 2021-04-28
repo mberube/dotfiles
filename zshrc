@@ -73,7 +73,6 @@ ZSH_THEME="robbyrussell-custom"
 plugins=(
   git
   bundler
-  dotenv
   osx
   rake
   rbenv
@@ -110,3 +109,18 @@ source $ZSH/oh-my-zsh.sh
 #
 source $HOME/.bash/alias.sh
 source $HOME/.bash/cdargs-bash.sh
+source $HOME/.rvm/scripts/rvm
+export PATH="/usr/local/opt/libpq/bin:$PATH"
+
+function cond_source () {
+  [ -f $1 ] && . $1
+}
+for f in `ls $HOME/.bash/local`; do
+  cond_source $HOME/.bash/local/$f
+done
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
