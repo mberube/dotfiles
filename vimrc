@@ -57,6 +57,7 @@ Plug 'vim-scripts/pydoc.vim'
 Plug 'nanki/treetop.vim'
 Plug 'vim-scripts/matchit.zip'
 Plug 'pangloss/vim-javascript'
+" Plug 'burnettk/vim-angular'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'othree/yajs.vim'
 Plug 'mhartington/oceanic-next'
@@ -104,12 +105,16 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 let g:ctrlp_working_path_mode = 'cra'
 let g:ctrlp_max_height = 100
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
-" if executable('ack')
-"   let g:ctrlp_user_command = 'ack %s -l ""'
-" endif
-" if executable('ag')
-"   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-" endif
+let g:ctrlp_max_files = 0
+let g:ctrlp_max_depth = 40
+if executable('ack')
+  let g:ctrlp_user_command = 'ack %s -l ""'
+endif
+if executable('ag')
+  "let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+  let g:ctrlp_use_caching = 0
+endif
 "map <leader>f :CtrlP pwd<cr>
 map <leader>f :CtrlP<cr>
 map <leader>F :CtrlPCurFile<cr>
