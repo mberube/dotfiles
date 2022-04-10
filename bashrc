@@ -57,15 +57,13 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-
 function cond_source () {
   [ -f $1 ] && . $1
 }
 
 source $HOME/.bash/shell.sh
-source $HOME/.bash/alias.sh
 source $HOME/.bash/cdargs-bash.sh
+source $HOME/.commonsh/alias.sh
 
 # shell is interactive?
 if [[ $- =~ i ]]; then
@@ -104,3 +102,7 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+[[ -s "/etc/profile.d/rvm.sh" ]] && source "/etc/profile.d/rvm.sh"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+
