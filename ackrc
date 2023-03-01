@@ -1,5 +1,6 @@
 --ignore-dir=tmp/
 --ignore-dir=venv/
+--ignore-dir=dist/
 
 --type-add=ruby=.haml
 --type-add=ruby=.slim
