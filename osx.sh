@@ -34,4 +34,5 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
 
-
+# allows moving around in vscode vi-mode (hjkl keys)
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
