@@ -8,3 +8,7 @@ Information and remarks
 - If a ~/bin directory is found, it is added to the PATH
 - some vim plugins require +ruby, which is not installed by default in osx (at least in 10.6). Either recompile or create an executable file 'vi' in ~/bin that will run 'mvim -v' (if you use macvim). 
 
+
+# Iterm
+Delete a word - Send Hex Codes - 0x1b 0x08 or 0x17 (0x1b 0x08 stops at dots , it's better for code)
+Delete a line - Send Hex Codes - 0x15
