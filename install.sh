@@ -23,3 +23,4 @@ relink .ackrc $DOTFILES/ackrc
 relink .pryrc $DOTFILES/pryrc
 relink .pythonrc $DOTFILES/pythonrc
 relink .ghci $DOTFILES/ghci
+relink .ideavimrc $DOTFILES/ideavimrc
