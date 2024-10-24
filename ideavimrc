@@ -1,3 +1,9 @@
 source ~/.vimrc
 
+set scrolloff=5
+set incsearch
+
+set ideajoin
+
+map Q gq
 map <leader>f <Action>(GotoFile)

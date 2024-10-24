@@ -12,3 +12,10 @@ Information and remarks
 # Iterm
 Delete a word - Send Hex Codes - 0x1b 0x08 or 0x17 (0x1b 0x08 stops at dots , it's better for code)
 Delete a line - Send Hex Codes - 0x15
+
+or
+
+add to zshrc
+bindkey -e
+bindkey '\e\e[C' forward-word
+bindkey '\e\e[D' backward-word

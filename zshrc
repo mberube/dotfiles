@@ -77,6 +77,7 @@ plugins=(
   rake
   rbenv
   ruby
+  asdf
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -121,8 +122,15 @@ for f in `ls $HOME/.bash/local`; do
   cond_source $HOME/.bash/local/$f
 done
 
-
 export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
 export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
+
+
+# The next line updates PATH for the Google Cloud SDK.
+#if [ -f '/Users/mathieu.berube/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mathieu.berube/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+#if [ -f '/Users/mathieu.berube/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mathieu.berube/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
